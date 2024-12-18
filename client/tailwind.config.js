@@ -8,7 +8,7 @@ export default {
     extend: {
       container: {
         center: true, // Konteynerin mərkəzə düzülməsi
-        padding: '1rem', // Daxili boşluq (padding)
+        padding: '8rem', // Daxili boşluq (padding)
         screens: {
           sm: '640px',
           md: '768px',
@@ -20,7 +20,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
-      colors: {
+      colors:{
         primary: {
           100: "#F0F1FF",
           200: "#E3E5FF",
@@ -32,7 +32,7 @@ export default {
           800: "#5C83FF",
           900: "#4078FF",
         },
-        neutral: {
+        neutralBlack: {
           100: "#E6E7E8",
           200: "#B6B7BC",
           300: "#878A92",
@@ -42,6 +42,11 @@ export default {
           700: "#333845",
           800: "#202533",
           900: "#0E1422",
+        },
+        neutralWhite:{
+          100:"#F6F6F6",
+          200:"#E9E9EB",
+          900:"#FFFFFF"
         },
         green: {
           100: "#D5E5D7",
@@ -75,8 +80,8 @@ export default {
           700: "#F9C14C",
           800: "#F6BB33",
           900: "#F3B40A",
-        },
-      }
+        },
+      }
     },
   },
   plugins: [],

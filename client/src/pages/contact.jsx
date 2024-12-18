@@ -7,7 +7,7 @@ const ContactPage = () => {
     <div>
       <NotificationBar/>
       <Header/>
-      Contact
+      <h1 className='text-6xl py-28 text-center'>CONTACT PAGE</h1>
     </div>
   )
 }

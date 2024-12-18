@@ -7,7 +7,7 @@ const AboutPage = () => {
     <div>
       <NotificationBar/>
       <Header/>
-      About
+      <h1 className='text-6xl py-28 text-center'>ABOUT PAGE</h1>
     </div>
   )
 }

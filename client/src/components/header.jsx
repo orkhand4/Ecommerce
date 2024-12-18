@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/Logo/Logomark.svg";
+import logo from "../assets/images/Logomark.svg";
 import chevronDown from "../assets/icons/global/Chevron Down.svg";
 import searchIcon from "../assets/icons/global/Search.svg";
 import cartIcon from "../assets/icons/global/Cart.svg";
@@ -9,7 +9,7 @@ import userIcon from "../assets/icons/global/User1.svg";
 const Header = () => {
   return (
     <div>
-      <div className="container flex justify-between items-center px-20 py-5">
+      <div className="container flex justify-between items-center py-5">
         <div className="flex items-center gap-x-3">
           <img src={logo} alt="logo" />
           <h1 className="font-bold text-xl">Ecommerce</h1>
@@ -28,7 +28,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="flex">
+        <div className="flex gap-x-6">
           <div className="flex">
             <img src={searchIcon} alt="Search Icon" />
             <input type="text" placeholder="Search products" />
