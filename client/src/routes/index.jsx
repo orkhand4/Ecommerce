@@ -16,5 +16,5 @@ export const routes = createBrowserRouter([
   {
     path: '/contact',
     element: <ContactPage/>
-  }
+  },
 ]);

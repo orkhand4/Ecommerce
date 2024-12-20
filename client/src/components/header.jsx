@@ -19,7 +19,9 @@ const Header = () => {
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
-            <li className="flex gap-2">Categories <img src={chevronDown} alt="Chevron Down Icon" /></li>
+            <li className="flex gap-2">
+              Categories <img src={chevronDown} alt="Chevron Down Icon" />
+            </li>
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
@@ -29,12 +31,16 @@ const Header = () => {
           </ul>
         </nav>
         <div className="flex gap-x-6">
-          <div className="flex">
-            <img src={searchIcon} alt="Search Icon" />
-            <input type="text" placeholder="Search products" />
+          <div className="flex border border-neutral-300 rounded-lg gap-x-2 p-2">
+            <img src={searchIcon} alt="Search Icon"/>
+            <input type="text" placeholder="Search products" className="outline-none" />
           </div>
-          <button><img src={cartIcon} alt="Cart Icon" /></button>
-          <button><img src={userIcon} alt="User Icon" /></button>
+          <button>
+            <img src={cartIcon} alt="Cart Icon" />
+          </button>
+          <button>
+            <img src={userIcon} alt="User Icon" />
+          </button>
         </div>
       </div>
     </div>
