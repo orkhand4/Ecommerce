@@ -6,7 +6,7 @@ import starBadge from "../assets/icons/global/Star Badge.svg";
 
 const Features = () => {
   return (
-    <div className="container flex justify-between items-center mt-10 gap-20">
+    <div className="container flex justify-between items-center mt-20 gap-20">
       <FeatureItem
         imgSrc={delivery}
         altText="Delivery Icon"
