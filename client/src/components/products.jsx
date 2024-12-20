@@ -1,39 +1,44 @@
-import React from 'react'
-import classicMono from "../assets/images/classicmono.svg";
-import monochromatic from "../assets/images/monochromatic.svg";
-import essentialNeutrals from "../assets/images/essential.svg";
-import utraanetBlack from "../assets/images/utraanetblack.svg";
-import ProductsItem from './productsItem';
+import React from "react";
+import ProductsItem from "./productsItem";
+import elegant from "../assets/images/elegant.svg";
+import sleekCozy from "../assets/images/sleekcozy.svg";
+import rawBlack from "../assets/images/rawblack.svg";
+import mockupBlack from "../assets/images/mockupblack.svg";
 
 const Products = () => {
   return (
     <div className="container mb-20">
-      <p className="font-bold text-center text-2xl">Featured</p>
-      <p>Latest</p>
+      <div className="flex justify-center items-center gap-5">
+        <span className="border border-neutralBlack-200 rounded-full py-1 px-3 text-xs font-medium">
+          Featured
+        </span>
+        <p className="text-neutralBlack-500 text-sm">Latest</p>
+      </div>
+
       <div className="flex justify-between mt-14">
         <ProductsItem
-          imgSrc={classicMono}
-          title="Classic Monochrome Tees"
+          imgSrc={elegant}
+          title="Elegant Ebony Sweatshirts"
           price="$35.00"
         />
         <ProductsItem
-          imgSrc={monochromatic}
-          title="Monochromatic Wardrobe"
-          price="$27.00"
+          imgSrc={sleekCozy}
+          title="Sleek and Cozy Black"
+          price="$57.00"
         />
         <ProductsItem
-          imgSrc={essentialNeutrals}
-          title="Essential Neutrals"
+          imgSrc={rawBlack}
+          title="Raw Black Tees"
+          price="$19.00"
+        />
+        <ProductsItem
+          imgSrc={mockupBlack}
+          title="MOCKUP Black"
           price="$30.00"
-        />
-        <ProductsItem
-          imgSrc={utraanetBlack}
-          title="Ultra Anet Black"
-          price="$40.00"
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
