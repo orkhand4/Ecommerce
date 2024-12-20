@@ -1,8 +1,6 @@
 import React from "react";
 import arrowRight from "../assets/icons/global/Arrow Right.svg";
 import cta from "../assets/images/cta.svg";
-import burst from "../assets/images/Burst-pucker.svg";
-import ellipse from "../assets/images/Ellipse.svg";
 
 const Cta = () => {
   return (

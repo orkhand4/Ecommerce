@@ -5,6 +5,7 @@ import Hero from '../components/hero'
 import Features from '../components/features'
 import BestSeller from '../components/bestSeller'
 import Cta from '../components/cta'
+import Products from '../components/products'
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
       <Features/>
       <BestSeller/>
       <Cta/>
+      <Products/>
     </div>
   )
 }
