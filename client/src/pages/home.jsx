@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import Features from '../components/features'
 import BestSeller from '../components/bestSeller'
+import Cta from '../components/cta'
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <Hero/>
       <Features/>
       <BestSeller/>
+      <Cta/>
     </div>
   )
 }

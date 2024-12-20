@@ -7,9 +7,9 @@ import utraanetBlack from "../assets/images/utraanetblack.svg";
 
 const BestSeller = () => {
   return (
-    <div className="container">
-      <h3 className="font-bold text-center text-2xl mt-20">Best Selling</h3>
-      <div className="flex justify-between mt-10">
+    <div className="container mb-20">
+      <h3 className="font-bold text-center text-2xl">Best Selling</h3>
+      <div className="flex justify-between mt-14">
         <BestSellerItem
           imgSrc={classicMono}
           title="Classic Monochrome Tees"
