@@ -6,6 +6,7 @@ import Features from '../components/features'
 import BestSeller from '../components/bestSeller'
 import Cta from '../components/cta'
 import Products from '../components/products'
+import Newsletter from '../components/newsletter'
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <BestSeller/>
       <Cta/>
       <Products/>
+      <Newsletter/>
     </div>
   )
 }
