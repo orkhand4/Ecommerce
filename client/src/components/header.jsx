@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container flex justify-between items-center py-5">
         <div className="flex items-center gap-x-3">
           <img src={logo} alt="logo" />
-          <h1 className="font-bold text-xl">Ecommerce</h1>
+          <h1 className="font-extrabold text-xl">Ecommerce</h1>
         </div>
         <nav>
           <ul className="flex gap-x-10 text-neutral-500 text-base">
