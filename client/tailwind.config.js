@@ -1,26 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       container: {
         center: true, // Konteynerin mərkəzə düzülməsi
-        padding: '8rem', // Daxili boşluq (padding)
+        padding: "0.75rem", // Daxili boşluq (padding)
         screens: {
-          sm: '640px',
-          md: '768px',
-          lg: '1024px',
-          xl: '1280px',
-          '2xl': '1440px',
-        },
-      },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1440px",
+        },
       },
-      colors:{
+      fontSize: {
+        "3xl": "2rem",
+        "4xl": [
+          "2.5rem",
+          {
+            lineHeight: "150%",
+          },
+        ],
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
+      colors: {
         primary: {
           100: "#F0F1FF",
           200: "#E3E5FF",
@@ -43,10 +49,10 @@ export default {
           800: "#202533",
           900: "#0E1422",
         },
-        neutralWhite:{
-          100:"#F6F6F6",
-          200:"#E9E9EB",
-          900:"#FFFFFF"
+        neutralWhite: {
+          100: "#F6F6F6",
+          200: "#E9E9EB",
+          900: "#FFFFFF",
         },
         blue: {
           100: "#E8EFFD",
@@ -91,10 +97,9 @@ export default {
           700: "#F9C14C",
           800: "#F6BB33",
           900: "#F3B40A",
-        },
-      }
+        },
+      },
     },
   },
   plugins: [],
-}
-
+};

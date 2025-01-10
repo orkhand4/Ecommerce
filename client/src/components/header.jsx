@@ -1,47 +1,55 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/Logomark.svg";
 import chevronDown from "../assets/icons/global/Chevron Down.svg";
 import searchIcon from "../assets/icons/global/Search.svg";
-import cartIcon from "../assets/icons/global/Cart.svg";
 import userIcon from "../assets/icons/global/User1.svg";
+import cartIcon from "../assets/icons/global/Cart.svg";
+import menu from "../assets/icons/global/Menu.svg";
 
 const Header = () => {
   return (
-      <div className="container flex justify-between items-center py-5 border-b border-neutral-300">
-        <div className="flex items-center gap-x-3">
+    <div className="container flex justify-between items-center py-5 border-b border-neutral-300">
+      <div className="flex items-center gap-12 xl:gap-32">
+        <Link to={"/"} className="flex items-center gap-x-3">
           <img src={logo} alt="logo" />
           <h1 className="font-extrabold text-xl">Ecommerce</h1>
-        </div>
-        <nav>
-          <ul className="flex gap-x-10 text-neutral-500 text-sm">
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li className="flex gap-2">
-              Categories <img src={chevronDown} alt="Chevron Down Icon" />
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-          </ul>
+        </Link>
+        <nav className=" hidden lg:flex items-center gap-8 text-neutral-500 text-sm font-medium">
+          <Link to="/">Home</Link>
+          <Link className="flex items-center gap-x-1">
+            <p>Categories</p> <img src={chevronDown} alt="Chevron Down Icon" />
+          </Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
-        <div className="flex gap-x-6">
-          <div className="flex border border-neutral-300 rounded-lg gap-x-2 p-2">
-            <img src={searchIcon} alt="Search Icon"/>
-            <input type="text" placeholder="Search products" className="outline-none" />
-          </div>
-          <button>
-            <img src={cartIcon} alt="Cart Icon" />
-          </button>
-          <button>
-            <img src={userIcon} alt="User Icon" />
-          </button>
-        </div>
       </div>
+      <div className="flex gap-x-6 md:gap-3">
+        <div className="hidden md:flex border border-neutral-300 rounded-lg gap-x-2 p-2">
+          <img className="w-6 y-6" src={searchIcon} alt="Search Icon" />
+          <input
+            type="text"
+            placeholder="Search products"
+            className="outline-none font-medium text-neutral-500 text-sm"
+          />
+        </div>
+        <img
+          className="w-6 y-6 cursor-pointer"
+          src={userIcon}
+          alt="User Icon"
+        />
+        <img
+          className="w-6 y-6 cursor-pointer"
+          src={cartIcon}
+          alt="Cart Icon"
+        />
+        <img
+          className="w-6 y-6 cursor-pointer lg:hidden"
+          src={menu}
+          alt="Menu Icon"
+        />
+      </div>
+    </div>
   );
 };
 
