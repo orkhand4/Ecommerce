@@ -34,17 +34,17 @@ const Header = () => {
           />
         </div>
         <img
-          className="w-6 y-6 cursor-pointer"
+          className="w-7 cursor-pointer"
           src={userIcon}
           alt="User Icon"
         />
         <img
-          className="w-6 y-6 cursor-pointer"
+          className="w-7 cursor-pointer"
           src={cartIcon}
           alt="Cart Icon"
         />
         <img
-          className="w-6 y-6 cursor-pointer lg:hidden"
+          className="w-7 cursor-pointer lg:hidden"
           src={menu}
           alt="Menu Icon"
         />
