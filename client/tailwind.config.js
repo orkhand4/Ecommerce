@@ -48,6 +48,17 @@ export default {
           200:"#E9E9EB",
           900:"#FFFFFF"
         },
+        blue: {
+          100: "#E8EFFD",
+          200: "#D1DEFB",
+          300: "#BACEFA",
+          400: "#A3BEF8",
+          500: "#8CADF6",
+          600: "#759DF4",
+          700: "#5E8CF3",
+          800: "#477CF1",
+          900: "#306CEF",
+        },
         green: {
           100: "#D5E5D7",
           200: "#C1D8C4",
